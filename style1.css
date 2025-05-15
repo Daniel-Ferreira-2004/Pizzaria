@@ -94,6 +94,7 @@ nav {
 
 /*FIM do Header*/
 
+ /*Começo da sessão Bem Vindo*/
 .containerBemVindo {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/home.jpg');
     background-repeat: no-repeat;
@@ -137,4 +138,88 @@ nav {
     transition: 0.5s;
     letter-spacing: 0.2em;
 }
+ /*Fim da sessão Bem Vindo*/
 
+/*Começo da sessão Sobre Nós*/
+ .containerSobreNos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+ }
+
+ .SobreNosCard {
+    text-align: start;
+    margin: 2em;
+    border: 1px solid white;
+ }
+
+.SobreNosTexto {
+    padding: 2em;
+    font-size: 18px;
+}
+
+.SobreNosTexto h2, p {
+    padding: 0.5em;
+}
+
+ .SobreNosCard img {
+    width: 100%;
+ }
+/*FIM da sessão Sobre Nós*/
+
+.containerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menuCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+
+.menuCardConteudo {
+    border: 1px solid white;
+    padding: 2em 4em;
+    margin: 0 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 28vw;
+    background-color: var(--bg-card);
+}
+
+.menuCardConteudo img{
+    height: 12em;
+    border-radius: 100%;
+    padding-bottom: 1em;
+}
+
+.menuCardConteudo p, h3 {
+    font-size: 1.5em;
+}
+
+.PromoCards i {
+    border: 1px solid white;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.MenuCardPromocao {
+    padding: 6em 0;
+    margin-bottom: 5em;
+    
+}
+
+.MenuCardPromocao img {
+    border-radius: 0;
+    height: 100%;
+}
