@@ -169,6 +169,7 @@ nav {
  }
 /*FIM da sessão Sobre Nós*/
 
+/*Começo da sessão Menu*/
 .containerMenu {
     display: flex;
     flex-direction: column;
@@ -197,6 +198,12 @@ nav {
     background-color: var(--bg-card);
 }
 
+.menuCardConteudo:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
 .menuCardConteudo img{
     height: 12em;
     border-radius: 100%;
@@ -223,3 +230,4 @@ nav {
     border-radius: 0;
     height: 100%;
 }
+/*Fim da sessão Menu*/
