@@ -146,17 +146,18 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    margin: 2em;
  }
 
  .SobreNosCard {
-    text-align: start;
-    margin: 2em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
     border: 1px solid white;
+    border-radius: 12px;
  }
 
 .SobreNosTexto {
-    padding: 2em;
     font-size: 18px;
 }
 
@@ -165,37 +166,39 @@ nav {
 }
 
  .SobreNosCard img {
-    width: 100%;
+    width: 75%;
+    height: 100%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
  }
+ 
 /*FIM da sessão Sobre Nós*/
 
 /*Começo da sessão Menu*/
-.containerMenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.menu h1{
+    text-align: center;
+
 }
 
-.menuCard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    flex-wrap: wrap;
+.containerMenu {
+    display: grid;
+    /* Organiza os elementos internos em um layout de grade */
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    /* Cria colunas flexíveis com largura mínima de 30rem e máxima proporcional */
+    gap: 1em;
+    /* Define o espaçamento entre os itens da grade */
+    margin: 2em;
 }
 
 .menuCardConteudo {
-    border: 1px solid white;
-    padding: 2em 4em;
-    margin: 0 0.8em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-    width: 28vw;
-    background-color: var(--bg-card);
+    padding: 5rem;
+    /* Adiciona espaçamento interno ao redor do conteúdo da caixa */
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+    border: var(--border);
+    /* Aplica uma borda ao redor da caixa */
+    background: var(--bg-card);
+    /* Define a cor de fundo da caixa */
 }
 
 .menuCardConteudo:hover {
@@ -220,14 +223,7 @@ nav {
     margin-bottom: 1em;
 }
 
-.MenuCardPromocao {
-    padding: 6em 0;
-    margin-bottom: 5em;
-    
-}
-
 .MenuCardPromocao img {
     border-radius: 0;
-    height: 100%;
 }
 /*Fim da sessão Menu*/
