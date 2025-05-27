@@ -191,7 +191,7 @@ nav {
 }
 
 .menuCardConteudo {
-    padding: 5rem;
+    padding: 2rem;
     /* Adiciona espaçamento interno ao redor do conteúdo da caixa */
     text-align: center;
     /* Centraliza o texto horizontalmente */
@@ -227,3 +227,12 @@ nav {
     border-radius: 0;
 }
 /*Fim da sessão Menu*/
+
+.menuCardConteudoComentario {
+    font-size: 14px;
+    height: 32em;
+}
+
+.menuCardConteudoComentario img {
+    width: 10em;
+}
