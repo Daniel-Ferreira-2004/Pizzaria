@@ -236,13 +236,13 @@ nav {
     font-size: 1.5em;
 }
 
-.PromoCards i {
+.promoIcon i {
     border: 1px solid white;
     padding: 0.5em;
     margin-bottom: 1em;
 }
 
-.PromoCards i:hover {
+.promoIcon i:hover {
     background-color: #da190f;
     transition: 1s;
     cursor: pointer;
