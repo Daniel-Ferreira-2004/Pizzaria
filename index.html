@@ -19,19 +19,19 @@
             <div class="Navegação">
                 <ul>
                     <li class="navItem">
-                        <a href="#">HOME</a>
+                        <a href="#homeID">HOME</a>
                     </li>
                     <li class="navItem">
-                        <a href="#">SOBRE</a>
+                        <a href="#AboutID">SOBRE</a>
                     </li>
                     <li class="navItem">
-                        <a href="#">MENU</a>
+                        <a href="#MenuID">MENU</a>
                     </li>
                     <li class="navItem">
-                        <a href="#">PROMOÇÕES</a>
+                        <a href="#PromocaoID">PROMOÇÕES</a>
                     </li>
                     <li class="navItem">
-                        <a href="#">AVALIAÇÕES</a>
+                        <a href="#ClientID">AVALIAÇÕES</a>
                     </li>
                 </ul>
             </div>
@@ -47,7 +47,7 @@
     <!--Fim do Header-->
 
     <!--Começo da Sessão Bem vindo-->
-    <section>
+    <section id="homeID">
         <div class="containerBemVindo">
             <div class="BemVindoTexto">
                 <h1>Bem Vindo á PizzaHash</h1>
@@ -60,7 +60,7 @@
     <!--Fim da Sessão Bem vindo-->
 
     <!--Começo da Sessão Sobre Nós-->
-    <section>
+    <section  id="AboutID">
         <div class="containerSobreNos">
             <h1>Sobre<span>Nós</span></h1>
             <div class="SobreNosCard">
@@ -81,7 +81,7 @@
     <!--Fim da Sessão Sobre Nós-->
 
     <!--Começo da Sessão Menu-->
-    <section class="menu">
+    <section class="menu" id="MenuID">
         <h1>Nosso <span>Menu</span></h1>
         <div class="containerMenu">
             <div class="menuCardConteudo menuCard">
@@ -112,7 +112,7 @@
                 <img src="img/pizza_item_5.jpg" alt="Pizza de Lusitana" loading="lazy">
                 <h3>Lusitana Colorida</h3>
                 <p>55.99$ <span>60.99$</span></p>
-                <a href=""><button class="btn">Adicionar Ao Carrinho</button"></a>
+                <a href=""><button class="btn">Adicionar Ao Carrinho</button></a>
             </div>
             <div class="menuCardConteudo menuCard">
                 <img src="img/pizza_item_6.jpg" alt="Pizza de Lava" loading="lazy">
@@ -125,7 +125,7 @@
     <!--Fim da Sessão Menu-->
 
     <!--Começo da Sessão Promoções-->
-    <section class="menu">
+    <section class="menu" id="PromocaoID">
         <h1>Combos e <span>Promoções</span></h1>
         <div class="containerMenu">
             <div class="menuCardConteudo MenuCardPromocao">
@@ -184,7 +184,7 @@
     <!--Fim da Sessão Promoções-->
 
     <!--Começo da Sessão Clientes-->
-    <section class="menu">
+    <section class="menu" id="ClientID">
         <h1>O que nossos <span>clientes dizem</span></h1>
         <div class="containerMenu comentario">
             <div class="menuCardConteudo menuCardConteudoComentario">
@@ -236,49 +236,82 @@
     </section>
     <!--Fim da Sessão Clientes-->
 
-    <footer>
-        <div class="footerBox">
-            <div class="footerTexto">
-                <h4>Pizza <span>Hash</span></h4>
+    <footer class="footer">
+        <div class="container">
+            <div class="content-1">
+                <h4 class="title-footer">Pizza <span>Hash</span></h4>
                 <ul>
-                    <li><a href="#">
-                            Sobre Nós
-                        </a></li>
-                    <li><a href="#">
-                            Menu
-                        </a></li>
-                    <li><a href="#">
-                            Política de Privacidade
-                        </a></li>
-                    <li><a href="#">
-                            Termos de Serviços
-                        </a></li>
-                </ul>
-            </div>
-            <div class="footerTexto">
-                <h4>Obtenha<span>Ajuda</span></h4>
-                <ul>
-                    <li><a href="#">
-                            FAQ
-                        </a></li>
-                    <li><a href="#">
-                            Devoluções
-                        </a></li>
-                    <li><a href="#">
-                            Opções de Pagamento
-                        </a></li>
-                </ul>
-                <h4>Siga <span>-nós</span></h4>
 
+                    <li>
+                        <a href="#about">Sobre Nós</a>
+                    </li>
+
+                    <li>
+                        <a href="#menu">Menu</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Política de Privacidade</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Termos de Serviços</a>
+                    </li>
+
+                </ul>
             </div>
-            <div class="footerIcons">
-                logos
+
+            <div class="content-1">
+                <h4 class="title-footer">Obtenha<span>Ajuda</span></h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+
+                    <li>
+                        <a href="#menu">Devoluções</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Opções de Pagamento</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="content-1">
+                <h4 class="title-footer">Siga <span>-nós</span></h4>
+                <div class="social-links">
+
+                    <a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+
+                    <a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+
+                    <a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+
+                    <a href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+
+                </div>
             </div>
         </div>
-        <div class="linha"></div>
-        <p>© 2024 PizzaHash. Todos Direitos Reservados.</p>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PizzaHash. Todos Direitos Reservados.</p>
+        </div>
     </footer>
 
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
