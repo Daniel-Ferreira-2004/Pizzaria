@@ -91,7 +91,7 @@ nav {
 }
 
 .Icons i {
-    padding-left: 1.5em;
+    display: none;
 }
 
 .Icons i:hover {
@@ -110,10 +110,9 @@ nav {
     background-position: center;
     display: flex;
     justify-content: start;
-    padding: 1em;
+    align-items: center;
     width: 100%;
     min-height: 85vh;
-
 }
 
 .BemVindoTexto {
@@ -257,12 +256,14 @@ nav {
 /*Começo da sessão Comentario*/
 .menuCardConteudoComentario {
     font-size: 14px;
-    height: 33em;
+    height: 42em;
 }
 
 .menuCardConteudoComentario img {
     width: 10em;
 }
+
+.menu
 
 .stars {
     display: flex;
@@ -378,3 +379,89 @@ nav {
     /* Define a cor do texto como cinza claro */
 }
 
+@media (max-width: 991px){
+    html {
+        font-size: 70%;
+    }
+
+    .SobreNosCard {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .sobreNosIMG {
+        width: 100%;
+        margin: 0;
+     }
+     
+     .BemVindoTexto {
+        width: 65%;
+        margin-left: 5em;
+    }
+
+    .containerBemVindo {
+        min-height: 70vh;
+    }
+
+    .Icons {
+        display: flex;
+        gap: 1em;
+        font-size: 1.5em;
+    }
+    .Icons i {
+        display: flex;
+    }
+
+    .Navegação {
+        display: none;
+    }
+}
+
+@media (max-width: 570px){
+    html {
+        font-size: 60%;
+    }
+
+    .menuCardConteudoComentario {
+        font-size: 14px;
+        height: 37em;
+    }
+
+    .SobreNosCard {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .containerBemVindo {
+        min-height: 80vh;
+    }
+
+    .BemVindoTexto {
+        width: 80%;
+    }
+
+}
+@media (max-width: 200px){
+    html {
+        font-size: 25%;
+    }
+
+    h1, p, h2, h3 {
+        font-size: 0.5em;
+    }
+
+    .btn {
+        width: 80%;
+        height: auto;
+        font-size: 0.5em;
+    }
+
+    .btn:hover {
+        width: 85%;
+        letter-spacing: 0.1em;
+    }
+
+    .menuCardConteudoComentario {
+        font-size: 1em;
+    }
+}
