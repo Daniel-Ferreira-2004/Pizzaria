@@ -7,7 +7,7 @@
     --border: 0.1rem solid grey;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: none;
@@ -46,6 +46,7 @@ h1 {
 span {
     color: #da190f;
 }
+
 /*Começo do Header*/
 
 header {
@@ -102,9 +103,9 @@ nav {
 
 /*FIM do Header*/
 
- /*Começo da sessão Bem Vindo*/
+/*Começo da sessão Bem Vindo*/
 .containerBemVindo {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/home.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -150,18 +151,19 @@ nav {
     width: 18em;
 
 }
- /*Fim da sessão Bem Vindo*/
+
+/*Fim da sessão Bem Vindo*/
 
 /*Começo da sessão Sobre Nós*/
- .containerSobreNos {
+.containerSobreNos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 2em;
- }
+}
 
- .SobreNosCard {
+.SobreNosCard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,33 +171,34 @@ nav {
     border-radius: 12px;
     width: 70%;
     margin-top: 0.5em;
- }
+}
 
- .sobreNosIMG {
+.sobreNosIMG {
     width: 75%;
     margin: 0 1em 0 0;
- }
+}
 
 .SobreNosTexto {
     font-size: 18px;
     padding: 1em;
 }
 
-.SobreNosTexto h2, p {
+.SobreNosTexto h2,
+p {
     padding: 0.5em;
 }
 
- .SobreNosCard img {
+.SobreNosCard img {
     width: 100%;
     height: auto;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
- }
- 
+}
+
 /*FIM da sessão Sobre Nós*/
 
 /*Começo da sessão Menu*/
-.menu h1{
+.menu h1 {
     text-align: center;
 }
 
@@ -226,13 +229,14 @@ nav {
     transition: 1s;
 }
 
-.menuCardConteudo img{
+.menuCardConteudo img {
     height: 12em;
     border-radius: 100%;
     padding-bottom: 1em;
 }
 
-.menuCardConteudo p, h3 {
+.menuCardConteudo p,
+h3 {
     font-size: 1.5em;
 }
 
@@ -251,6 +255,7 @@ nav {
 .MenuCardPromocao img {
     border-radius: 0;
 }
+
 /*Fim da sessão Menu*/
 
 /*Começo da sessão Comentario*/
@@ -263,9 +268,7 @@ nav {
     width: 10em;
 }
 
-.menu
-
-.stars {
+.menu .stars {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,9 +276,11 @@ nav {
     gap: 1em;
 }
 
-.fa-star, .fa-star-half-stroke {
+.fa-star,
+.fa-star-half-stroke {
     color: #da190f;
 }
+
 /*Fim da sessão Comentario*/
 
 .footer {
@@ -379,7 +384,31 @@ nav {
     /* Define a cor do texto como cinza claro */
 }
 
-@media (max-width: 991px){
+.botao-zap {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.botao-whats {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    border: none;
+    z-index: 999;
+    transition: 0.5s;
+}
+
+.botao-whats img {
+    width: 7em;
+}
+
+.botao-whats:hover {
+    bottom: 60px;
+}
+
+@media (max-width: 991px) {
     html {
         font-size: 70%;
     }
@@ -392,9 +421,9 @@ nav {
     .sobreNosIMG {
         width: 100%;
         margin: 0;
-     }
-     
-     .BemVindoTexto {
+    }
+
+    .BemVindoTexto {
         width: 65%;
         margin-left: 5em;
     }
@@ -408,6 +437,7 @@ nav {
         gap: 1em;
         font-size: 1.5em;
     }
+
     .Icons i {
         display: flex;
     }
@@ -415,9 +445,22 @@ nav {
     .Navegação {
         display: none;
     }
+
+    .botao-whats {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .botao-whats:hover {
+        bottom: 40px;
+    }
+
+    .botao-whats img {
+        width: 10em;
+    }
 }
 
-@media (max-width: 570px){
+@media (max-width: 570px) {
     html {
         font-size: 60%;
     }
@@ -441,12 +484,16 @@ nav {
     }
 
 }
-@media (max-width: 200px){
+
+@media (max-width: 200px) {
     html {
         font-size: 25%;
     }
 
-    h1, p, h2, h3 {
+    h1,
+    p,
+    h2,
+    h3 {
         font-size: 0.5em;
     }
 
