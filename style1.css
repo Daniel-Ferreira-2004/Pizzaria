@@ -392,8 +392,8 @@ h3 {
 
 .botao-whats {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 200px;
+    right: -20px;
     cursor: pointer;
     border: none;
     z-index: 999;
@@ -401,11 +401,11 @@ h3 {
 }
 
 .botao-whats img {
-    width: 7em;
+    width: 6em;
 }
 
 .botao-whats:hover {
-    bottom: 60px;
+    bottom: 180px;
 }
 
 @media (max-width: 991px) {
@@ -447,12 +447,8 @@ h3 {
     }
 
     .botao-whats {
-        bottom: 20px;
-        right: 20px;
-    }
-
-    .botao-whats:hover {
-        bottom: 40px;
+        position: fixed;
+        bottom: 230px;
     }
 
     .botao-whats img {
